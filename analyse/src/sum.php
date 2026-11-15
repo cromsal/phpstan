@@ -1,5 +1,6 @@
 <?php
 
-$user = getUser();
+if ($user !== null) {
+    echo $user->getName();
+}
 
-echo $user->getName();
